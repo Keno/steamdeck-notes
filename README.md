@@ -36,8 +36,11 @@ cmake: error while loading shared libraries: libjsoncpp.so.25: cannot open share
 
 ## Maybe just reinstall all packages?
 
+** This doesn't actually work, because the root partition doesn't have enough space **
+
 Possible some pacman state got messed up when the FS was read-only?
 ```
 sudo pacman -Qqn | sudo pacman -S -
 ```
 to reinstall everything.
+
